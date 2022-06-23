@@ -58,10 +58,10 @@ include("bayesian/poisson_regression.jl")
 
 """
 ```julia
-   @fitmodel(formula, data, modelClass)
-   @fitmodel(formula, data, modelClass, link)
-   @fitmodel(formula, data, modelClass, prior)
-   @fitmodel(formula, data, modelClass, link, prior)
+@fitmodel(formula, data, modelClass)
+@fitmodel(formula, data, modelClass, link)
+@fitmodel(formula, data, modelClass, prior)
+@fitmodel(formula, data, modelClass, link, prior)
 ```
 
 Macro for calling `fitmodel` functions to run different models.
