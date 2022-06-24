@@ -1,9 +1,9 @@
 # CRRao
 
 <!-- [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://xKDR.github.io/CRRao.jl/stable) -->
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://xKDR.github.io/CRRao.jl/dev)
-![Build Status](https://github.com/xKDR/CRRao.jl/actions/workflows/ci.yml/badge.svg)
-![Build Status](https://github.com/xKDR/CRRao.jl/actions/workflows/documentation.yml/badge.svg)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://codetalker7.github.io/CRRao.jl/dev)
+![Build Status](https://github.com/codetalker7/CRRao.jl/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/codetalker7/CRRao.jl/actions/workflows/documentation.yml/badge.svg)
 [![Coverage](https://codecov.io/gh/xKDR/CRRao.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/xKDR/CRRao.jl)
 [![Milestones](https://img.shields.io/badge/-milestones-brightgreen)](https://github.com/xKDR/CRRao.jl/milestones)
 
