@@ -6,11 +6,11 @@ DocMeta.setdocmeta!(CRRao, :DocTestSetup, :(using CRRao); recursive=true)
 makedocs(;
     modules=[CRRao],
     authors="xKDR Forum",
-    repo="https://github.com/xKDR/CRRao.jl/blob/{commit}{path}#{line}",
+    repo="https://github.com/codetalker7/CRRao.jl/blob/{commit}{path}#{line}",
     sitename="CRRao.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://xKDR.github.io/CRRao.jl",
+        canonical="https://codetalker.github.io/CRRao.jl",
         assets=String[],
     ),
     pages=[
@@ -29,7 +29,7 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/xKDR/CRRao.jl",
+    repo="github.com/codetalker7/CRRao.jl",
     target = "build",
-    devbranch = "main"
+    devbranch = "with-ghactions"
 )
