@@ -37,47 +37,7 @@ Gear          1.01998    0.851408     1.20    0.2410  -0.72405     2.76401
 HP           -0.0367861  0.00989146  -3.72    0.0009  -0.0570478  -0.0165243
 WT           -3.19781    0.846546    -3.78    0.0008  -4.93188    -1.46374
 Gear          1.01998    0.851408     1.20    0.2410  -0.72405     2.76401
-────────────────────────────────────────────────────────────────────────────</code><br/><code class="language-julia-repl hljs" style="display:block;">julia&gt; sigma(model)</code><code class="nohighlight hljs ansi" style="display:block;">2.5741691724978977</code></pre><p>We can also get the predicted response of the model, along with other measures like the vector of Cook&#39;s distances.</p><pre><code class="language-julia-repl hljs" style="display:block;">julia&gt; predict(model)</code><code class="nohighlight hljs ansi" style="display:block;">32-element Vector{Float64}:
- 23.668849952338704
- 22.853408243206346
- 25.253556140740866
- 20.746171762311327
- 17.63557054383011
- 20.146638453886396
- 14.644831040166551
- 23.61182872351377
- 22.525801204993858
- 20.5684264750049
-  ⋮
- 13.781422171673466
- 16.34045724109048
- 27.477936821121038
- 26.92271503957491
- 28.118449005198737
- 17.264981908248625
- 21.818065399379666
- 13.37404747719859
- 23.193986311384343</code><br/><code class="language-julia-repl hljs" style="display:block;">julia&gt; cooksdistance(model)</code><code class="nohighlight hljs ansi" style="display:block;">32-element Vector{Float64}:
- 0.013342034282302684
- 0.00688728266731234
- 0.015495847517058797
- 0.0014309089637600369
- 0.004471979213924145
- 0.014588985833724696
- 0.0015401004198812064
- 0.005826402580870707
- 0.0003074315682457445
- 0.007011803724485943
- ⋮
- 0.0020768256096929424
- 0.02203970419212919
- 0.0001378106083284689
- 0.006862929526075293
- 0.047038899451778936
- 0.0381204513180911
- 0.03540469459036285
- 0.13715341355042346
- 0.006145660329519638</code></pre><p>And here is the plot of the vector of Cook&#39;s distances.</p><pre><code class="language-julia hljs">plot(cooksdistance(model))</code></pre><?xml version="1.0" encoding="utf-8"?>
+────────────────────────────────────────────────────────────────────────────</code><br/><code class="language-julia-repl hljs" style="display:block;">julia&gt; sigma(model)</code><code class="nohighlight hljs ansi" style="display:block;">2.5741691724978972</code></pre><p>We can also get the predicted response of the model, along with other measures like the vector of Cook&#39;s distances using the <a href="../../api/frequentist_regression/#CRRao.predict-Tuple{FrequentistRegression}"><code>predict</code></a> and <a href="../../api/frequentist_regression/#CRRao.cooksdistance-Tuple{FrequentistRegression}"><code>cooksdistance</code></a> functions exported by CRRao. Here&#39;s a plot of the vector of Cook&#39;s distances.</p><pre><code class="language-julia hljs">plot(cooksdistance(model))</code></pre><?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="400" viewBox="0 0 2400 1600">
 <defs>
   <clipPath id="clip020">
@@ -207,8 +167,8 @@ M1973.05 200.05 L2277.23 200.05 L2277.23 96.3696 L1973.05 96.3696  Z
 Iterations        = 1001:1:11000
 Number of chains  = 1
 Samples per chain = 10000
-Wall duration     = 164.2 seconds
-Compute duration  = 164.2 seconds
+Wall duration     = 215.69 seconds
+Compute duration  = 215.69 seconds
 parameters        = λ, β[1], β[2], β[3], β[4]
 internals         = lp, n_steps, is_accept, acceptance_rate, log_density, hamiltonian_energy, hamiltonian_energy_error, max_hamiltonian_energy_error, tree_depth, numerical_error, step_size, nom_step_size
 
@@ -231,4 +191,4 @@ Quantiles
         β[1]    0.0008    0.0036    0.0051    0.0065    0.0095
         β[2]   -0.2316   -0.0896   -0.0259    0.0310    0.1509
         β[3]    0.1108    0.1416    0.1588    0.1755    0.2094
-        β[4]    0.0107    0.0260    0.0338    0.0417    0.0563</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../../">« Home</a><a class="docs-footer-nextpage" href="../examples/">Examples »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.19 on <span class="colophon-date" title="Monday 27 June 2022 13:01">Monday 27 June 2022</span>. Using Julia version 1.7.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+        β[4]    0.0107    0.0260    0.0338    0.0417    0.0563</code></pre></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../../">« Home</a><a class="docs-footer-nextpage" href="../examples/">Examples »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.19 on <span class="colophon-date" title="Sunday 3 July 2022 17:24">Sunday 3 July 2022</span>. Using Julia version 1.7.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
